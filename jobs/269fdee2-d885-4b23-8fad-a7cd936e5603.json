@@ -1,0 +1,215 @@
+{
+  "job_id": "269fdee2-d885-4b23-8fad-a7cd936e5603",
+  "xlsx_path": "uploads\\269fdee2-d885-4b23-8fad-a7cd936e5603.xlsx",
+  "created_at": "2026-01-06T16:21:43.517362",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [
+    {
+      "line": 2,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Produto",
+      "message": "Produto inválido (deve ser \"Projuris Enterprise\" ou \"Projuris Empresas\")"
+    },
+    {
+      "line": 3,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Produto",
+      "message": "Produto inválido (deve ser \"Projuris Enterprise\" ou \"Projuris Empresas\")"
+    },
+    {
+      "line": 4,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 4,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 4,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 4,
+      "column": "Produto",
+      "message": "Produto inválido (deve ser \"Projuris Enterprise\" ou \"Projuris Empresas\")"
+    },
+    {
+      "line": 5,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Produto",
+      "message": "Produto inválido (deve ser \"Projuris Enterprise\" ou \"Projuris Empresas\")"
+    },
+    {
+      "line": 6,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 6,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 6,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 6,
+      "column": "Produto",
+      "message": "Produto inválido (deve ser \"Projuris Enterprise\" ou \"Projuris Empresas\")"
+    },
+    {
+      "line": 7,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Produto",
+      "message": "Produto inválido (deve ser \"Projuris Enterprise\" ou \"Projuris Empresas\")"
+    },
+    {
+      "line": 8,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Produto",
+      "message": "Produto inválido (deve ser \"Projuris Enterprise\" ou \"Projuris Empresas\")"
+    }
+  ],
+  "total": 7,
+  "success": 0,
+  "errors_count": 7,
+  "import_errors": [
+    {
+      "line": 2,
+      "column": "Produto",
+      "message": "Produto inválido: ProJuris Enterprise"
+    },
+    {
+      "line": 3,
+      "column": "Produto",
+      "message": "Produto inválido: ProJuris Enterprise"
+    },
+    {
+      "line": 4,
+      "column": "Produto",
+      "message": "Produto inválido: ProJuris para Empresas"
+    },
+    {
+      "line": 5,
+      "column": "Produto",
+      "message": "Produto inválido: ProJuris Enterprise"
+    },
+    {
+      "line": 6,
+      "column": "Produto",
+      "message": "Produto inválido: ProJuris para Empresas"
+    },
+    {
+      "line": 7,
+      "column": "Produto",
+      "message": "Produto inválido: ProJuris Enterprise"
+    },
+    {
+      "line": 8,
+      "column": "Produto",
+      "message": "Produto inválido: ProJuris para Empresas"
+    }
+  ],
+  "log_path": "C:\\Users\\diego.isquierdo\\OneDrive - Softplan\\Projuris\\Diego\\Inovações\\Importação - Movidesk\\Importador de Tickets\\logs\\import_269fdee2-d885-4b23-8fad-a7cd936e5603_20260106_162153.csv"
+}

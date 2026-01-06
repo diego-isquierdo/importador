@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from importer.xlsx_reader import read_xlsx_rows
+from movidesk.sender import resolve_platform
 
 
 EXPECTED_HEADERS: list[str] = [
@@ -61,7 +62,7 @@ OPTIONAL_FIELDS = {
     "Tipo_cancelamento",
 }
 
-ALLOWED_PRODUCTS = {"Projuris Enterprise", "Projuris Empresas"}
+
 
 
 @dataclass(frozen=True)
@@ -145,14 +146,17 @@ def validate_rows(headers: list[str], rows: list[dict[str, Any]]) -> list[Valida
             produto_str = "" if row.get(produto_col) is None else str(row.get(produto_col)).strip()
             if _is_empty(produto_str):
                 errors.append(ValidationErrorItem(line=line, column=produto_col, message="Campo obrigatório vazio"))
-            elif produto_str not in ALLOWED_PRODUCTS:
-                errors.append(
-                    ValidationErrorItem(
-                        line=line,
-                        column=produto_col,
-                        message='Produto inválido (deve ser "Projuris Enterprise" ou "Projuris Empresas")',
+            else:
+                try:
+                    resolve_platform(produto_str)
+                except ValueError as e:
+                    errors.append(
+                        ValidationErrorItem(
+                            line=line,
+                            column=produto_col,
+                            message=str(e),
+                        )
                     )
-                )
 
     return errors
 

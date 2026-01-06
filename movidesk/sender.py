@@ -21,12 +21,22 @@ TOKENS = {
 
 
 def resolve_platform(produto: Any) -> str:
-    p = "" if produto is None else str(produto).strip()
-    if p == "Projuris Empresas":
+    raw = "" if produto is None else str(produto)
+    p = " ".join(raw.strip().split()).lower()
+    if not p:
+        raise ValueError("Produto vazio")
+
+    has_enterprise = "enterprise" in p
+    has_empresas = ("empresa" in p) or ("empresas" in p)
+
+    if has_enterprise and has_empresas:
+        raise ValueError(f"Produto ambíguo: {raw.strip()}")
+    if has_empresas:
         return "empresas"
-    if p == "Projuris Enterprise":
+    if has_enterprise:
         return "enterprise"
-    raise ValueError(f"Produto inválido: {p}")
+
+    raise ValueError(f"Produto inválido: {raw.strip()}")
 
 
 def resolve_token(platform: str) -> str:
