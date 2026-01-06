@@ -1,0 +1,13 @@
+{
+  "job_id": "1738d027-bd38-4928-87c4-3ba874858173",
+  "xlsx_path": "uploads\\1738d027-bd38-4928-87c4-3ba874858173.xlsx",
+  "created_at": "2026-01-06T08:04:49.356655",
+  "status": "uploaded",
+  "validated": false,
+  "validation_errors": [],
+  "total": null,
+  "success": 0,
+  "errors_count": 0,
+  "import_errors": [],
+  "log_path": null
+}

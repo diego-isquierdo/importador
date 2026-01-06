@@ -1,0 +1,25 @@
+{
+  "job_id": "f47eda08-05db-40cd-a62c-ec9a43187388",
+  "xlsx_path": "uploads\\f47eda08-05db-40cd-a62c-ec9a43187388.xlsx",
+  "created_at": "2026-01-06T07:58:56.511059",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [
+    {
+      "line": 2,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    }
+  ],
+  "total": 1,
+  "success": 0,
+  "errors_count": 1,
+  "import_errors": [
+    {
+      "line": 2,
+      "column": "API",
+      "message": "Erro Status Code 400 - [{\"errorMessage\":\"There is no match for the Organization value entered\",\"propertyName\":\"Client[n].Organization\"}]"
+    }
+  ],
+  "log_path": "C:\\Users\\diego.isquierdo\\OneDrive - Softplan\\Projuris\\Diego\\Inovações\\Importação - Movidesk\\Importador de Tickets\\logs\\import_f47eda08-05db-40cd-a62c-ec9a43187388_20260106_075903.csv"
+}

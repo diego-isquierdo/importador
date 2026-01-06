@@ -1,0 +1,73 @@
+{
+  "type": 2, \\campo fixo - não deve ser alterado
+  "subject": "Teste de API - Enviado via Postman - Diego", //Preencher com as informações da coluna "Título" da planilha 
+  "category": "Tarefa",\\campo fixo - não deve ser alterado
+  "urgency": "4. Média",\\campo fixo - não deve ser alterado
+  "status": "Novo",\\campo fixo - não deve ser alterado
+  "createdDate": "2016-11-18T14:25:07.1920886",//Preencher sempre com a data e hora atual, no momento da importação, obedecendo sempre o formato apresentado nesse exemplo
+  "justification": null,\\campo fixo - não deve ser alterado
+      "serviceFull": [
+        "3. Serviços (uso interno da ProJuris)",
+        "Atividades Internas"
+    ],\\campo fixo - não deve ser alterado o campo "serviceFull"
+    "serviceFirstLevelId": 207551,\\campo fixo - não deve ser alterado
+    "serviceFirstLevel": "Atividades Internas",\\campo fixo - não deve ser alterado
+    "serviceSecondLevel": "3. Serviços (uso interno da ProJuris)",\\campo fixo - não deve ser alterado
+        "createdBy": {
+        "id": "1592146388",
+        "personType": 1,
+        "profileType": 3},\\campo fixo - não deve ser alterado dentro do campo "createdBy"
+        "clients": [
+        {
+            "id": "1592146388",
+            "personType": 1,
+            "profileType": 3,
+            "businessName": "Diego de Mesquita Isquierdo",
+            "email": "diego.isquierdo@projuris.com.br",
+            "phone": null,
+            "isDeleted": false,
+            "organization": {
+                "id": "1419498004",
+                "personType": 2,
+                "profileType": 2,
+                "businessName": "ProJuris",
+                "email": null,
+                "phone": null
+            },
+            "address": null,
+            "complement": null,
+            "cep": null,
+            "city": null,
+            "bairro": null,
+            "number": null,
+            "reference": null
+        }
+    ],\\campo fixo - não deve ser alterado nada dentro do campo "clients"
+        "actions": [
+        {
+            "type": 2,
+            "description": "Este campo será utlizado para o envio de informações, a serem estabelecidas na fase de levantamento",
+			/*
+				O campo "description" deve ser preencido da seguinte forma, com uma informação em cada linha:
+				- "WorkFlow: "{{identificador}}<br /><br />" "
+				- "Liberado para Serviços Técnicos: "{{Habilitada_em}}<br />" "
+				- "Cliente novo? "{{Cliente_novo}}<br />" "
+				- "Razão Social: "{{Razão_social}}<br />" "
+				- "Nome Fantasia: "{{Nome_fantasia}}<br />" "
+				- "Contato no cliente: "{{Contato_cliente}}" - "{{Email_cliente}}<br /><br />" "
+				- "Módulos: "{{Modulos}}<br /><br />" "
+				- "Servicos: "{{Servico_mensal}}<br />" " >>>>>Sustituir o caracter "/" por "<br />"
+				- "Serviço Técnico: "{{Servico_tecnico}}<br />" "
+				- "Ativação de Hosting? "{{Ativação_hosting?}}<br />" "
+				- "Tem legal? "{{Tem_legal?}}<br /><br />" "
+				- "Observações:<br />"{{Observacoes_gerais}}
+			*/
+			"createdDate": "2025-12-31T10:59:49.6505248",//Preencher sempre com a data e hora atual, no momento da importação, obedecendo sempre o formato apresentado nesse exemplo
+            "createdBy": {
+                "id": "1592146388",
+                "personType": 1,
+                "profileType": 3
+            }
+        }//Apenas fazer a alteração do campo "description", conforme descrito anteriormente
+    ]
+}

@@ -1,0 +1,344 @@
+{
+  "job_id": "4a8d83da-bf83-4fd5-9772-014336effa78",
+  "xlsx_path": "uploads\\4a8d83da-bf83-4fd5-9772-014336effa78.xlsx",
+  "created_at": "2026-01-06T09:14:50.244896",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [
+    {
+      "line": 2,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 4,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 6,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 9,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 9,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 9,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 10,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 10,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 10,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 11,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 11,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 11,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 11,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 11,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 12,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 12,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 12,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 12,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 13,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 13,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 14,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 14,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 14,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 14,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 14,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 15,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 15,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 15,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 15,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 16,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 16,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 16,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 17,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 17,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 17,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 17,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 17,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 18,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 18,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 19,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 19,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 19,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 19,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 19,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 20,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 20,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 20,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 20,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 20,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 21,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 21,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 21,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 21,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    }
+  ],
+  "total": 20,
+  "success": 20,
+  "errors_count": 0,
+  "import_errors": [],
+  "log_path": "C:\\Users\\diego.isquierdo\\OneDrive - Softplan\\Projuris\\Diego\\Inovações\\Importação - Movidesk\\Importador de Tickets\\logs\\import_4a8d83da-bf83-4fd5-9772-014336effa78_20260106_091512.csv"
+}

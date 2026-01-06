@@ -1,0 +1,19 @@
+{
+  "job_id": "9f7e1cca-8ec4-40eb-9aac-bb801303f2cc",
+  "xlsx_path": "uploads\\9f7e1cca-8ec4-40eb-9aac-bb801303f2cc.xlsx",
+  "created_at": "2026-01-06T09:11:44.242682",
+  "status": "uploaded",
+  "validated": false,
+  "validation_errors": [
+    {
+      "line": 1,
+      "column": "headers",
+      "message": "Cabeçalhos inválidos (grafia e ordem devem ser exatamente as esperadas)"
+    }
+  ],
+  "total": null,
+  "success": 0,
+  "errors_count": 0,
+  "import_errors": [],
+  "log_path": null
+}

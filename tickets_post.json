@@ -1,0 +1,58 @@
+{
+  "type": 2,
+  "subject": "Teste de API - Enviado via Postman - Diego",
+  "category": "Tarefa",
+  "urgency": "4. Média",
+  "status": "Novo",
+  "createdDate": "2016-11-18T14:25:07.1920886",
+  "justification": null,
+      "serviceFull": [
+        "3. Serviços (uso interno da ProJuris)",
+        "Atividades Internas"
+    ],
+    "serviceFirstLevelId": 207551,
+    "serviceFirstLevel": "Atividades Internas",
+    "serviceSecondLevel": "3. Serviços (uso interno da ProJuris)",
+        "createdBy": {
+        "id": "1592146388",
+        "personType": 1,
+        "profileType": 3},
+        "clients": [
+        {
+            "id": "1592146388",
+            "personType": 1,
+            "profileType": 3,
+            "businessName": "Diego de Mesquita Isquierdo",
+            "email": "diego.isquierdo@projuris.com.br",
+            "phone": null,
+            "isDeleted": false,
+            "organization": {
+                "id": "1419498004",
+                "personType": 2,
+                "profileType": 2,
+                "businessName": "ProJuris",
+                "email": null,
+                "phone": null
+            },
+            "address": null,
+            "complement": null,
+            "cep": null,
+            "city": null,
+            "bairro": null,
+            "number": null,
+            "reference": null
+        }
+    ],
+        "actions": [
+        {
+            "type": 2,
+            "description": "Este campo será utlizado para o envio de informações, a serem estabelecidas na fase de levantamento",
+            "createdDate": "2025-12-31T10:59:49.6505248",
+            "createdBy": {
+                "id": "1592146388",
+                "personType": 1,
+                "profileType": 3
+            }
+        }
+    ]
+}

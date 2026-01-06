@@ -1,0 +1,25 @@
+{
+  "job_id": "0dc43032-f356-47d0-ae5c-92c9746cf919",
+  "xlsx_path": "uploads\\0dc43032-f356-47d0-ae5c-92c9746cf919.xlsx",
+  "created_at": "2026-01-06T07:20:39.756888",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [
+    {
+      "line": 2,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    }
+  ],
+  "total": 1,
+  "success": 0,
+  "errors_count": 1,
+  "import_errors": [
+    {
+      "line": 2,
+      "column": "API",
+      "message": "Erro Status Code 400 - [{\"errorMessage\":\"There is no match for the Ref. code value entered\",\"propertyName\":\"CreatedBy\"},{\"errorMessage\":\"There is no match for the Service value entered\",\"propertyName\":\"ServiceFirstLevelId\"},{\"errorMessage\":\"There is no match for the Ref. code value entered\",\"propertyName\":\"Clients[n].Id\"},{\"errorMessage\":\"There is no match for the Ref. code value entered\",\"propertyName\":\"Actions[0].CreatedBy\"}]"
+    }
+  ],
+  "log_path": "C:\\Users\\diego.isquierdo\\OneDrive - Softplan\\Projuris\\Diego\\Inovações\\Importação - Movidesk\\Importador de Tickets\\logs\\import_0dc43032-f356-47d0-ae5c-92c9746cf919_20260106_072048.csv"
+}

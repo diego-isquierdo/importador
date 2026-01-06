@@ -1,0 +1,60 @@
+{
+  "type": 2,
+  "subject": "AMBAR SERVICOS AUXILIARES DE TRANSPORTE AEREO S.A. | VENDA INICIAL| PROJURIS PLATAFORMA",
+  "category": "Tarefa",
+  "urgency": "4. Média",
+  "status": "Novo",
+  "createdDate": "2026-01-06T07:59:03.8835460",
+  "justification": null,
+  "serviceFull": [
+    "3. Serviços (uso interno da ProJuris)",
+    "Atividades Internas"
+  ],
+  "serviceFirstLevelId": 545682,
+  "serviceFirstLevel": "Atividades Internas",
+  "serviceSecondLevel": "Implantação de Serviços",
+  "createdBy": {
+    "id": "252142226",
+    "personType": 1,
+    "profileType": 3
+  },
+  "clients": [
+    {
+      "id": "252142226",
+      "personType": 1,
+      "profileType": 3,
+      "businessName": "Diego de Mesquita Isquierdo",
+      "email": "diego.isquierdo@projuris.com.br",
+      "phone": null,
+      "isDeleted": false,
+      "organization": {
+        "id": "1419498004",
+        "personType": 2,
+        "profileType": 2,
+        "businessName": "ProJuris",
+        "email": null,
+        "phone": null
+      },
+      "address": null,
+      "complement": null,
+      "cep": null,
+      "city": null,
+      "bairro": null,
+      "number": null,
+      "reference": null
+    }
+  ],
+  "actions": [
+    {
+      "type": 2,
+      "description": "WorkFlow: PDWEB05695<br /><br />Liberado para Serviços Técnicos: 2025-12-30 00:00:00<br />Cliente novo? Sim<br />Razão Social: AMBAR SERVICOS AUXILIARES DE TRANSPORTE AEREO S.A.<br />Nome Fantasia: AMBAR<br />Contato no cliente: Edson Junior - ejunior@ambaarlounge.com<br /><br />Módulos: Acordos/ Biblioteca Jurídica/ Certidões, Alvarás e Licenças/ Conciliações/ Contratos/ Gestão de Distribuições/ Gestão de Escritórios - Billing/ Gestão de Publicações D.O./ Imobiliário/ Marcas & Patentes/ Procurações/ Portal de Assinatura Digital/ ProConsumidor (Sindec, Procon)/ Societário/ Processos Adm e Judiciais (e-Social)/ Requisições/Consultivo<br /><br />Servicos: Assinatura Digital<br /> Índices Financeiros<br /> Crédito de Automação e IA<br />Serviço Técnico: Carga de arquivos digitais (anexos)<br />Ativação de Hosting? Sim<br />Tem legal? Sim<br /><br />Observações:<br />GC Responsável: Lincoln Possani _x000D_<br />_x000D_<br />Esta venda trata-se da OFERTA PLATAFORMA onde serão disponibilizados todos os módulos ao cliente porém a implantação será cobrado apenas referente aos módulos: _x000D_<br />Biblioteca de documentos, Requisições/consultivo, contratos, Portal de Assinatura, Procurações, Societário_x000D_<br />_x000D_<br />*Primeira mensalidade dia 20 DE JANEIRO 2026",
+      "createdDate": "2026-01-06T07:59:03.8835460",
+      "createdBy": {
+        "id": "252142226",
+        "personType": 1,
+        "profileType": 3
+      }
+    }
+  ],
+  "serviceThirdLevel": "2. Serviços (uso internos da PROJURIS)"
+}

@@ -1,0 +1,65 @@
+{
+  "job_id": "0bab0336-66d4-4626-8bdc-7b2466af756a",
+  "xlsx_path": "uploads\\0bab0336-66d4-4626-8bdc-7b2466af756a.xlsx",
+  "created_at": "2026-01-05T21:49:38.933417",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [
+    {
+      "line": 2,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    }
+  ],
+  "total": 2,
+  "success": 0,
+  "errors_count": 2,
+  "import_errors": [
+    {
+      "line": 2,
+      "column": "API",
+      "message": "Erro Status Code 500 - {\"message\":\"An error has occurred.\"}"
+    },
+    {
+      "line": 3,
+      "column": "API",
+      "message": "Erro Status Code 500 - {\"message\":\"An error has occurred.\"}"
+    }
+  ],
+  "log_path": "logs\\import_0bab0336-66d4-4626-8bdc-7b2466af756a_20260105_214949.csv"
+}

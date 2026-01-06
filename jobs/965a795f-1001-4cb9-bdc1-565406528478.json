@@ -1,0 +1,13 @@
+{
+  "job_id": "965a795f-1001-4cb9-bdc1-565406528478",
+  "xlsx_path": "uploads\\965a795f-1001-4cb9-bdc1-565406528478.xlsx",
+  "created_at": "2026-01-06T07:13:30.193916",
+  "status": "uploaded",
+  "validated": false,
+  "validation_errors": [],
+  "total": null,
+  "success": 0,
+  "errors_count": 0,
+  "import_errors": [],
+  "log_path": null
+}

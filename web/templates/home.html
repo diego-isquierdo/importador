@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="card">
+  <h1>Importação de Tickets</h1>
+
+  <div class="row">
+    <input id="file" type="file" accept=".xlsx" />
+    <button id="btnUpload" class="btn" disabled>Carregar</button>
+  </div>
+
+  <div class="row">
+    <button id="btnValidate" class="btn" disabled>Validar</button>
+    <button id="btnSend" class="btn btn--primary" disabled>Enviar</button>
+    <a id="btnDownload" class="btn" style="display:none" href="#" target="_blank">Baixar log</a>
+  </div>
+
+  <div class="status">
+    <div><strong>Job:</strong> <span id="jobId">-</span></div>
+    <div><strong>Status:</strong> <span id="jobStatus">-</span></div>
+    <div><strong>Progresso:</strong> <span id="jobProgress">-</span></div>
+  </div>
+
+  <div class="messages">
+    <h2>Mensagens</h2>
+    <div id="messages"></div>
+  </div>
+
+  <div class="messages">
+    <h2>Erros</h2>
+    <div id="errors"></div>
+  </div>
+</section>
+
+<script src="/static/app.js"></script>
+{% endblock %}

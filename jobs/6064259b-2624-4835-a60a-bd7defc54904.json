@@ -1,0 +1,54 @@
+{
+  "job_id": "6064259b-2624-4835-a60a-bd7defc54904",
+  "xlsx_path": "uploads\\6064259b-2624-4835-a60a-bd7defc54904.xlsx",
+  "created_at": "2026-01-05T21:32:26.641597",
+  "status": "uploaded",
+  "validated": false,
+  "validation_errors": [
+    {
+      "line": 2,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Observacoes_gerais",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    }
+  ],
+  "total": null,
+  "success": 0,
+  "errors_count": 0,
+  "import_errors": [],
+  "log_path": null
+}
