@@ -48,7 +48,7 @@ _TEMPLATE: dict[str, Any] = {
     ],
     "actions": [
         {
-            "type": 2,
+            "type": 1,
             "description": "",
             "createdDate": "",
             "createdBy": {"id": "1592146388", "personType": 1, "profileType": 3},

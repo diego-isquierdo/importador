@@ -1,0 +1,144 @@
+{
+  "job_id": "15188088-92db-440f-8dc3-000840908dca",
+  "xlsx_path": "uploads\\15188088-92db-440f-8dc3-000840908dca.xlsx",
+  "created_at": "2026-01-06T17:48:23.834032",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [
+    {
+      "line": 2,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 2,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 3,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 4,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 4,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 4,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 5,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 6,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 6,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 6,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Tem_migração",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 7,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Modulos",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Servico_mensal",
+      "message": "Campo obrigatório vazio"
+    },
+    {
+      "line": 8,
+      "column": "Servico_tecnico",
+      "message": "Campo obrigatório vazio"
+    }
+  ],
+  "total": 7,
+  "success": 7,
+  "errors_count": 0,
+  "import_errors": [],
+  "log_path": "C:\\Users\\diego.isquierdo\\OneDrive - Softplan\\Projuris\\Diego\\Inovações\\Importação - Movidesk\\Importador de Tickets\\logs\\import_15188088-92db-440f-8dc3-000840908dca_20260106_174833.csv"
+}
