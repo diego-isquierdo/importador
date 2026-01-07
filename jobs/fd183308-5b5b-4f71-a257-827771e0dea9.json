@@ -1,0 +1,250 @@
+{
+  "job_id": "fd183308-5b5b-4f71-a257-827771e0dea9",
+  "xlsx_path": "uploads\\fd183308-5b5b-4f71-a257-827771e0dea9.xlsx",
+  "created_at": "2026-01-06T17:54:39.571900",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [
+    {
+      "line": 1,
+      "column": "Modulos",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Habilitada_em",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Time/Equipe",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Tem_legal?",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Servico_mensal",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Nome_fantasia",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Tem_migração",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Ativação_hosting?",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "identificador",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Setor",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Gerar_licenca?",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Servico_tecnico",
+      "message": "Coluna obrigatória ausente"
+    },
+    {
+      "line": 1,
+      "column": "Cliente_novo",
+      "message": "Coluna obrigatória ausente"
+    }
+  ],
+  "total": 34,
+  "success": 0,
+  "errors_count": 34,
+  "import_errors": [
+    {
+      "line": 2,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 3,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 4,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 5,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 6,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 7,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 8,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 9,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 10,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 11,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 12,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 13,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 14,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 15,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 16,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 17,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 18,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 19,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 20,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 21,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 22,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 23,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 24,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 25,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 26,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 27,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 28,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 29,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 30,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 31,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 32,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 33,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 34,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    },
+    {
+      "line": 35,
+      "column": "identificador",
+      "message": "Identificador vazio"
+    }
+  ],
+  "log_path": "C:\\Users\\diego.isquierdo\\OneDrive - Softplan\\Projuris\\Diego\\Inovações\\Importação - Movidesk\\Importador de Tickets\\logs\\import_fd183308-5b5b-4f71-a257-827771e0dea9_20260106_175500.csv"
+}

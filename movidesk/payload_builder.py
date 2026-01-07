@@ -76,6 +76,11 @@ def build_ticket_payload(row: dict[str, Any], platform: str = "enterprise") -> d
     s = get_settings()
     if platform == "empresas":
         created_by_id = s.empresas_created_by_id
+        client_id = s.empresas_client_id
+        client_person_type = s.empresas_client_person_type
+        client_profile_type = s.empresas_client_profile_type
+        client_business_name = s.empresas_client_business_name
+        client_email = s.empresas_client_email
         service_first_level_id = s.empresas_service_first_level_id
         service_first_level = s.empresas_service_first_level
         service_second_level = s.empresas_service_second_level
@@ -86,6 +91,11 @@ def build_ticket_payload(row: dict[str, Any], platform: str = "enterprise") -> d
         organization_business_name = s.empresas_organization_business_name
     else:
         created_by_id = s.enterprise_created_by_id
+        client_id = s.enterprise_client_id
+        client_person_type = s.enterprise_client_person_type
+        client_profile_type = s.enterprise_client_profile_type
+        client_business_name = s.enterprise_client_business_name
+        client_email = s.enterprise_client_email
         service_first_level_id = s.enterprise_service_first_level_id
         service_first_level = s.enterprise_service_first_level
         service_second_level = s.enterprise_service_second_level
@@ -96,7 +106,11 @@ def build_ticket_payload(row: dict[str, Any], platform: str = "enterprise") -> d
         organization_business_name = s.enterprise_organization_business_name
 
     payload["createdBy"]["id"] = created_by_id
-    payload["clients"][0]["id"] = created_by_id
+    payload["clients"][0]["id"] = client_id
+    payload["clients"][0]["personType"] = client_person_type
+    payload["clients"][0]["profileType"] = client_profile_type
+    payload["clients"][0]["businessName"] = client_business_name
+    payload["clients"][0]["email"] = client_email
     payload["actions"][0]["createdBy"]["id"] = created_by_id
 
     payload["clients"][0]["organization"]["id"] = organization_id

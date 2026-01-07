@@ -15,6 +15,25 @@ class Settings:
         # Default Empresas baseado em JSON validado fornecido
         self.empresas_created_by_id = os.getenv("EMPRESAS_CREATED_BY_ID", "252142226")
 
+        self.enterprise_client_id = os.getenv("ENTERPRISE_CLIENT_ID", "1711202734")
+        self.empresas_client_id = os.getenv("EMPRESAS_CLIENT_ID", "1981527134")
+
+        self.enterprise_client_person_type = int(os.getenv("ENTERPRISE_CLIENT_PERSON_TYPE", "1"))
+        self.empresas_client_person_type = int(os.getenv("EMPRESAS_CLIENT_PERSON_TYPE", "1"))
+
+        self.enterprise_client_profile_type = int(os.getenv("ENTERPRISE_CLIENT_PROFILE_TYPE", "3"))
+        self.empresas_client_profile_type = int(os.getenv("EMPRESAS_CLIENT_PROFILE_TYPE", "3"))
+
+        self.enterprise_client_business_name = os.getenv(
+            "ENTERPRISE_CLIENT_BUSINESS_NAME", "Giovanna Coelli Quiroga"
+        )
+        self.empresas_client_business_name = os.getenv(
+            "EMPRESAS_CLIENT_BUSINESS_NAME", "Giovanna Coelli Quiroga"
+        )
+
+        self.enterprise_client_email = os.getenv("ENTERPRISE_CLIENT_EMAIL", "giovanna.quiroga@softplan.com.br")
+        self.empresas_client_email = os.getenv("EMPRESAS_CLIENT_EMAIL", "giovanna.quiroga@softplan.com.br")
+
         self.enterprise_service_first_level_id = int(os.getenv("ENTERPRISE_SERVICE_FIRST_LEVEL_ID", "207559"))
         # Default Empresas baseado em JSON validado fornecido
         self.empresas_service_first_level_id = int(os.getenv("EMPRESAS_SERVICE_FIRST_LEVEL_ID", "545682"))
