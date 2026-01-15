@@ -11,6 +11,12 @@ class Settings:
         self.log_dir = os.getenv("LOG_DIR", "logs")
         self.rate_limit_seconds = int(os.getenv("RATE_LIMIT_SECONDS", "6"))
 
+        self.enterprise_token = os.getenv("ENTERPRISE_TOKEN", "63d11b3a-b64a-48ac-8ab1-62fc12ebcb90")
+        self.empresas_token = os.getenv("EMPRESAS_TOKEN", "e04c1f7e-f477-480b-8803-e2766624761e")
+
+        self.enterprise_workflow_custom_field_id = int(os.getenv("ENTERPRISE_WORKFLOW_CUSTOM_FIELD_ID", "32135"))
+        self.empresas_workflow_custom_field_id = int(os.getenv("EMPRESAS_WORKFLOW_CUSTOM_FIELD_ID", "78577"))
+
         self.enterprise_created_by_id = os.getenv("ENTERPRISE_CREATED_BY_ID", "1592146388")
         # Default Empresas baseado em JSON validado fornecido
         self.empresas_created_by_id = os.getenv("EMPRESAS_CREATED_BY_ID", "252142226")

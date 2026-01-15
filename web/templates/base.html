@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Importador Movidesk</title>
     <link rel="stylesheet" href="/static/app.css" />
+    {% block extra_head %}{% endblock %}
   </head>
-  <body>
+  <body class="page {% if active_page %}page--{{ active_page }}{% endif %}">
     <div class="layout">
       <aside class="sidebar">
         <div class="brand">Importador Movidesk</div>
         <nav class="nav">
-          <a class="nav__item nav__item--active" href="/">Importação</a>
+          <a class="nav__item {% if active_page == 'importacao' %}nav__item--active{% endif %}" href="/">Importação</a>
+          <a class="nav__item {% if active_page == 'consulta' %}nav__item--active{% endif %}" href="/consulta">Consulta de Tickets</a>
         </nav>
       </aside>
 

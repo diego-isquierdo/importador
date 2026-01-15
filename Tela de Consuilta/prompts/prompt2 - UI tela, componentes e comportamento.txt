@@ -1,0 +1,46 @@
+Implemente a nova tela “Consulta de Tickets” com UX consistente com o sistema atual.
+
+Layout sugerido:
+- Título: “Consulta de Tickets”
+- Tabs ou toggle: “Unitária” | “Em lote”
+- Área de resultados abaixo (com lista inteligente)
+
+Modo Unitária:
+- Input texto: “Workflow”
+- Select: “Base” com opções:
+  - Projuris Empresas
+  - Projuris Enterprise
+- Botão “Pesquisar”
+Validações:
+- bloquear pesquisa se workflow vazio
+- bloquear pesquisa se base não selecionada
+Ao pesquisar:
+- mostrar loading
+- desabilitar botão enquanto consulta ocorre
+- se zero tickets retornados: exibir mensagem em tela “Nenhum ticket encontrado para o workflow informado.”
+
+Modo Em Lote:
+- Componente upload de planilha (xlsx/csv conforme suporte existente)
+- Validar que existem colunas: workflow e Produto
+- Validar cada linha:
+  - workflow não vazio
+  - Produto não vazio
+  - Produto deve mapear para uma das duas bases (normalização: trim + case-insensitive + colapsar múltiplos espaços)
+- Executar consultas por workflow para cada linha válida, respeitando rate limit.
+Regra de mensagens:
+- não exibir mensagens por workflow sem retorno
+- somente exibir mensagem se, ao final, nenhum ticket foi retornado no lote inteiro
+
+Resultados:
+- Exibir lista de tickets (linhas). Cada linha mostra APENAS:
+  - Data da última Ação (lastActionDate)
+  - Serviço - Segundo Nível (serviceSecondLevel)
+  - Serviço - Primeiro Nível (serviceFirstLevel)
+  - Status (status)
+  - Assunto (subject)
+  - Número do Ticket (id)
+- Cada linha deve ser clicável. Ao clicar:
+  - buscar detalhes por ID na base correspondente do ticket
+  - extrair actions e mostrar o description da action com maior id
+  - exibir expandido abaixo da linha (accordion/inline panel)
+- Tratar estados: loading no clique e fallback se não houver actions/description (mostrar “Sem trâmites disponíveis”)

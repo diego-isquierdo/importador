@@ -31,6 +31,11 @@ _HEADER_ALIASES: dict[str, str] = {
     "descri_o_motivo": "Descrição_motivo",
     "modulos": "Modulos",
 
+    # consulta de tickets
+    "workflow": "workflow",
+    "work_flow": "workflow",
+    "workflo": "workflow",
+
     # modelo STESTE
     "data_emissao": "Data_emissao",
     "prazo_atv": "Prazo_atv",

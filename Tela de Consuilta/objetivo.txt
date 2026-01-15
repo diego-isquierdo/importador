@@ -1,0 +1,129 @@
+Objetivo
+
+Adicionar ao Importador Movidesk uma nova funcionalidade: Consulta de tickets criados, acessível por um novo botão no menu lateral esquerdo (na área destacada em vermelho no print).
+
+Funcionalidade da nova tela
+
+A nova tela terá duas formas de consulta por número de workflow (vínculo de outro sistema):
+
+Consulta unitária
+
+Campo texto: workflow (alfanumérico)
+
+Seletor do sistema/base:
+
+“Projuris Empresas”
+
+“Projuris Enterprise”
+
+Botão “Pesquisar”
+
+Validações:
+
+workflow obrigatório
+
+base obrigatória
+
+Consulta em lote (upload de planilha)
+
+Upload de uma planilha modelo
+
+Cada linha possui:
+
+coluna workflow (obrigatória, não vazia)
+
+coluna Produto (obrigatória, não vazia)
+
+Regras de roteamento:
+
+Se Produto mencionar “Projuris Empresas” → consulta na base Empresas
+
+Se Produto mencionar “Projuris Enterprise” → consulta na base Enterprise
+
+Tratar variantes:
+
+maiúsculas/minúsculas
+
+espaços extras
+
+Se Produto não reconhecido → erro de validação da linha
+
+Resultado em tela: “lista inteligente”
+
+A resposta da API por workflow pode trazer 0..N tickets
+
+Exibir os tickets em uma lista, 1 linha por ticket (1:1).
+
+Exibir apenas os campos “apelidados” (os comentados no JSON):
+
+Campos exibidos na linha:
+
+Data da última Ação → lastActionDate
+
+Serviço - Segundo Nível → serviceSecondLevel
+
+Serviço - Primeiro Nível → serviceFirstLevel
+
+Status → status
+
+Assunto → subject
+
+Número do Ticket → id
+
+Clique na linha: consulta por ID e expansão
+
+Ao clicar em uma linha:
+
+Fazer nova chamada à API por ID do ticket
+
+Do retorno, pegar a lista actions
+
+Selecionar a action com maior id
+
+Extrair description
+
+Exibir o description expandindo abaixo da linha (inline/accordion)
+
+Mensagens quando não há retorno
+
+Unitária: se não houver nenhum ticket → exibir mensagem em tela (“Nenhum ticket encontrado…”)
+
+Lote:
+
+não exibir “mensagens por linha” quando um workflow não retorna nada
+
+exibir mensagem apenas se o lote inteiro não retornar nenhum ticket
+
+APIs (duas bases)
+
+Empresas
+
+WF customFieldId: 78577
+
+Token: e04c1f7e-f477-480b-8803-e2766624761e
+
+GET por WF:
+https://api.movidesk.com/public/v1/tickets?token=...&$select=...&$filter=customFieldValues/any(cf: cf/customFieldId eq 78577 and cf/value eq '{{workflow}}')
+
+GET por ID:
+https://api.movidesk.com/public/v1/tickets?token=...&id={{ticket}}
+
+Consulta por ID retorna 1 ticket
+
+Enterprise
+
+WF customFieldId: 32135
+
+Token: 63d11b3a-b64a-48ac-8ab1-62fc12ebcb90
+
+GET por WF (mesmo padrão):
+... customFieldId eq 32135 and cf/value eq '{{workflow}}'
+
+GET por ID:
+https://api.movidesk.com/public/v1/tickets?token=...&id={{ticket}}
+
+Rate limit obrigatório
+
+O código deve limitar as chamadas para no máximo 10 requisições por minuto (global da funcionalidade de consulta).
+
+Precisa estar preparado para “segurar fila”/agendar chamadas ao longo do tempo (especialmente lote).

@@ -1,0 +1,15 @@
+Implemente um rate limiter que garanta NO MÁXIMO 10 requisições por minuto (global) para chamadas às APIs do Movidesk nesta funcionalidade.
+
+Requisitos do rate limiter:
+- Deve funcionar para:
+  - consultas unitárias
+  - lote (múltiplos workflows)
+  - clique na linha (consulta por ID)
+- Se exceder, as requisições devem ser enfileiradas e executadas quando permitido (não falhar imediatamente por excesso local).
+- Estratégia aceitável: token bucket, leaky bucket, ou fila com espaçamento mínimo (ex.: 6s entre chamadas, pois 10/min => 1 chamada a cada 6 segundos).
+- Para lote: processar as linhas válidas de forma sequencial (ou concorrência baixa) respeitando o rate limit; mostrar progresso (ex.: “Processando X de Y”) se possível.
+- A UI deve indicar quando está “aguardando fila” (loading) sem travar a aplicação.
+
+Importante:
+- Se houver múltiplas ações do usuário (ex.: clicar em várias linhas rapidamente), enfileirar.
+- Garantir que o rate limiter seja reutilizado pelo serviço de API (um singleton por sessão/tela).

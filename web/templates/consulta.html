@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="card">
+  <h1>Consulta de Tickets</h1>
+
+  <div class="row">
+    <button id="tabSingle" class="btn btn--primary">Consulta unitária</button>
+    <button id="tabBatch" class="btn">Consulta em lote (XLSX)</button>
+  </div>
+
+  <div id="panelSingle">
+    <div class="row">
+      <input id="singleWorkflow" type="text" placeholder="Workflow" style="min-width:320px" />
+      <div class="radioGroup">
+        <label class="radioOption">
+          <input type="radio" name="singleBase" value="empresas" />
+          <span>Projuris Empresas</span>
+        </label>
+        <label class="radioOption">
+          <input type="radio" name="singleBase" value="enterprise" />
+          <span>Projuris Enterprise</span>
+        </label>
+      </div>
+      <button id="btnSingleSearch" class="btn btn--primary">Pesquisar</button>
+    </div>
+
+    <div class="status">
+      <div><strong>Job:</strong> <span id="singleJobId">-</span></div>
+      <div><strong>Status:</strong> <span id="singleJobStatus">-</span></div>
+      <div><strong>Progresso:</strong> <span id="singleJobProgress">-</span></div>
+    </div>
+  </div>
+
+  <div id="panelBatch" style="display:none">
+    <div class="row">
+      <input id="batchFile" type="file" accept=".xlsx" />
+      <button id="btnBatchUpload" class="btn" disabled>Carregar</button>
+    </div>
+
+    <div class="row">
+      <button id="btnBatchValidate" class="btn" disabled>Validar</button>
+      <button id="btnBatchRun" class="btn btn--primary" disabled>Consultar</button>
+    </div>
+
+    <div class="status">
+      <div><strong>Job:</strong> <span id="batchJobId">-</span></div>
+      <div><strong>Status:</strong> <span id="batchJobStatus">-</span></div>
+      <div><strong>Progresso:</strong> <span id="batchJobProgress">-</span></div>
+    </div>
+  </div>
+
+  <div id="messagesCard" class="messages">
+    <h2>Mensagens</h2>
+    <div id="messages"></div>
+  </div>
+
+  <div id="errorsCard" class="messages">
+    <h2>Erros</h2>
+    <div id="errors"></div>
+  </div>
+
+  <div id="resultsCard" class="messages">
+    <h2>Resultados</h2>
+    <div id="results"></div>
+  </div>
+</section>
+
+<script src="/static/consulta.js"></script>
+{% endblock %}

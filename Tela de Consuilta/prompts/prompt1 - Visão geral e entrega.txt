@@ -1,0 +1,18 @@
+Você vai atualizar uma plataforma existente (Importador Movidesk) adicionando uma nova funcionalidade: “Consulta de Tickets”.
+
+Requisitos:
+1) Adicionar um novo botão no menu lateral esquerdo (na área indicada no print) que navegue para uma nova tela/rota “Consulta”.
+2) A nova tela deve permitir consulta de tickets por número de workflow (vínculo), em dois modos:
+   - Consulta unitária (campo workflow + seletor de base + botão pesquisar)
+   - Consulta em lote (upload de planilha modelo com colunas workflow e Produto)
+3) Os resultados devem ser exibidos em uma “lista inteligente” (1 linha por ticket), com comportamento clicável: ao clicar em um ticket, fazer nova chamada por ID e expandir abaixo da linha o último trâmite (description da última action).
+4) Implementar rate limiting estrito: no máximo 10 requisições por minuto para chamadas às APIs do Movidesk dentro desta funcionalidade.
+5) Sem logs por enquanto.
+
+Entregáveis:
+- UI: novo item no menu, nova tela com abas/seções para Unitária e Lote
+- Serviço de API + rate limiter + validações
+- Lista inteligente com expansão por clique (consulta por ID)
+- Mensagens de “sem resultados” conforme regras
+- Código limpo, modular, e com boa UX (loading/disabled states)
+Não invente requisitos fora do descrito.

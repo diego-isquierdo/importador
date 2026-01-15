@@ -1,0 +1,29 @@
+{
+  "job_id": "a6ed400a-d4f0-4ebb-966e-8f914f661651",
+  "xlsx_path": null,
+  "created_at": "2026-01-15T15:35:35.864677",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [],
+  "total": 1,
+  "processed": 1,
+  "results": [
+    {
+      "lastActionDate": "2025-12-01T22:38:05.4358172",
+      "lastUpdate": "2025-12-01T22:38:05.4358172",
+      "serviceFirstLevelId": 207354,
+      "serviceSecondLevel": "Importação",
+      "actionCount": 20,
+      "serviceFirstLevel": "Importação de Documentos de Processos (Arquivos)",
+      "ownerTeam": "Serviços",
+      "status": "Pendente",
+      "category": "Tarefa",
+      "subject": "[GMF] - Importação de Documentos de Processos",
+      "id": 154582,
+      "platform": "enterprise",
+      "workflow": "PDWEB03558"
+    }
+  ],
+  "line_errors": [],
+  "detail": null
+}

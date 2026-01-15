@@ -1,0 +1,30 @@
+Crie um módulo/serviço de integração com Movidesk para consulta (GET). Deve suportar duas bases: Empresas e Enterprise.
+
+NÃO hardcode tokens no frontend. Tokens devem vir de config/ENV no backend ou camada segura da aplicação.
+
+Base Projuris Empresas:
+- token: e04c1f7e-f477-480b-8803-e2766624761e (config/secret)
+- customFieldId workflow: 78577
+- Busca por workflow:
+  GET https://api.movidesk.com/public/v1/tickets?token=<TOKEN>&$select=id,subject,category,status,ownerTeam,serviceFirstLevel,serviceFirstLevel,actionCount,serviceSecondLevel,serviceFirstLevelId,lastUpdate,lastActionDate&$filter=customFieldValues/any(cf:%20cf/customFieldId%20eq%2078577%20and%20cf/value%20eq%20%27{{workflow}}%27)
+- Busca por ID:
+  GET https://api.movidesk.com/public/v1/tickets?token=<TOKEN>&id={{ticket}}
+
+Base Projuris Enterprise:
+- token: 63d11b3a-b64a-48ac-8ab1-62fc12ebcb90 (config/secret)
+- customFieldId workflow: 32135
+- Busca por workflow (mesmo select):
+  GET https://api.movidesk.com/public/v1/tickets?token=<TOKEN>&$select=id,subject,category,status,ownerTeam,serviceFirstLevel,serviceFirstLevel,actionCount,serviceSecondLevel,serviceFirstLevelId,lastUpdate,lastActionDate&$filter=customFieldValues/any(cf:%20cf/customFieldId%20eq%2032135%20and%20cf/value%20eq%20%27{{workflow}}%27)
+- Busca por ID:
+  GET https://api.movidesk.com/public/v1/tickets?token=<TOKEN>&id={{ticket}}
+
+Regras:
+- Busca por workflow retorna 0..N tickets (lista)
+- Busca por ID retorna 1 ticket (objeto)
+- Para expansão:
+  - pegar ticket.actions (lista)
+  - selecionar action com maior action.id
+  - extrair action.description
+
+Garanta encoding correto do workflow (URL encode) e montagem segura do filtro.
+Implemente tratamento de erros HTTP e de rede com mensagens amigáveis na UI.

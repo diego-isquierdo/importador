@@ -1,0 +1,166 @@
+:root{
+  --c-bg:#F7F9FC;
+  --c-surface:#FFFFFF;
+  --c-primary:#2F80ED;
+  --c-primary-600:#2568C3;
+  --c-secondary:#EAF2FF;
+  --c-text:#1F2A44;
+  --c-muted:#556987;
+  --c-border:#DCE6F2;
+  --c-danger:#D64545;
+  --c-danger-bg:#FFF2F2;
+  --c-shadow:0 10px 30px rgba(31,42,68,.08);
+}
+
+body.page--consulta{background:var(--c-bg);color:var(--c-text)}
+
+body.page--consulta .layout{grid-template-columns:280px 1fr}
+
+body.page--consulta .sidebar{
+  background:linear-gradient(180deg,#F3F7FF 0%, #EAF2FF 100%);
+  border-right:1px solid var(--c-border);
+  padding:20px;
+}
+
+body.page--consulta .brand{color:var(--c-text);font-weight:700}
+
+body.page--consulta .nav__item{color:var(--c-text);border:1px solid transparent}
+body.page--consulta .nav__item:hover{background:rgba(47,128,237,.06)}
+body.page--consulta .nav__item--active{background:var(--c-primary);color:#fff}
+
+body.page--consulta .main{padding:26px}
+
+body.page--consulta .card{
+  max-width:1080px;
+  background:transparent;
+  border:0;
+  padding:0;
+}
+
+body.page--consulta h1{
+  margin:0 0 14px;
+  font-size:24px;
+  font-weight:650;
+  letter-spacing:-.01em;
+  color:var(--c-text);
+}
+
+body.page--consulta h2{
+  margin:0;
+  font-size:13px;
+  font-weight:650;
+  color:var(--c-text);
+}
+
+body.page--consulta .row{gap:12px;margin-bottom:14px}
+
+body.page--consulta input[type=file]{
+  background:var(--c-surface);
+  color:var(--c-muted);
+  border:1px dashed var(--c-border);
+  border-radius:14px;
+  padding:12px;
+}
+
+body.page--consulta input[type=text],
+body.page--consulta select{
+  background:var(--c-surface);
+  color:var(--c-text);
+  border:1px solid var(--c-border);
+  border-radius:14px;
+  padding:11px 12px;
+  min-height:44px;
+  outline:none;
+}
+
+body.page--consulta input[type=text]:focus,
+body.page--consulta select:focus{border-color:rgba(47,128,237,.55);box-shadow:0 0 0 4px rgba(47,128,237,.14)}
+
+body.page--consulta .btn{
+  background:var(--c-surface);
+  color:var(--c-primary);
+  border:1px solid var(--c-border);
+  border-radius:14px;
+  padding:11px 14px;
+  min-height:44px;
+  transition:background .15s ease,border-color .15s ease,transform .05s ease;
+}
+
+body.page--consulta .btn:hover{border-color:rgba(47,128,237,.35);background:rgba(47,128,237,.05)}
+body.page--consulta .btn:active{transform:translateY(1px)}
+body.page--consulta .btn:disabled{opacity:.55}
+
+body.page--consulta .btn--primary{
+  background:var(--c-primary);
+  color:#fff;
+  border-color:var(--c-primary);
+}
+
+body.page--consulta .btn--primary:hover{background:var(--c-primary-600);border-color:var(--c-primary-600)}
+
+body.page--consulta .status{
+  background:var(--c-surface);
+  border:1px solid var(--c-border);
+  border-radius:16px;
+  box-shadow:var(--c-shadow);
+  margin:12px 0 18px;
+}
+
+body.page--consulta .status strong{color:var(--c-text)}
+body.page--consulta .status span{color:var(--c-muted)}
+
+body.page--consulta .messages{
+  background:var(--c-surface);
+  border:1px solid var(--c-border);
+  border-radius:16px;
+  box-shadow:var(--c-shadow);
+  padding:0;
+  overflow:hidden;
+}
+
+body.page--consulta .messages h2{
+  padding:12px 14px;
+  background:var(--c-secondary);
+  border-bottom:1px solid var(--c-border);
+}
+
+body.page--consulta #messages,
+body.page--consulta #errors,
+body.page--consulta #results{padding:12px 14px}
+
+body.page--consulta #messages .msg{
+  background:#fff;
+  border:1px solid var(--c-border);
+  border-radius:14px;
+  margin-bottom:10px;
+}
+
+body.page--consulta #errors .err{
+  background:var(--c-danger-bg);
+  border:1px solid rgba(214,69,69,.22);
+  color:var(--c-danger);
+  border-radius:14px;
+  margin-bottom:10px;
+}
+
+body.page--consulta #results .msg{
+  background:#fff;
+  border:1px solid var(--c-border);
+  border-radius:14px;
+  margin-bottom:10px;
+  transition:background .15s ease,border-color .15s ease;
+}
+
+body.page--consulta #results .msg:hover{background:rgba(47,128,237,.04);border-color:rgba(47,128,237,.25)}
+
+body.page--consulta #results .msg > div:last-child{
+  background:var(--c-secondary);
+  border:1px solid var(--c-border);
+  border-radius:12px;
+  padding:12px;
+}
+
+@media (max-width: 920px){
+  body.page--consulta .layout{grid-template-columns:1fr}
+  body.page--consulta .sidebar{position:sticky;top:0;z-index:1}
+}

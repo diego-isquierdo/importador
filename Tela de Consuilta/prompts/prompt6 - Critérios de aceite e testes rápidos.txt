@@ -1,0 +1,22 @@
+Critérios de aceite (obrigatórios):
+
+Unitária:
+1) Sem workflow ou sem base => bloqueia pesquisa e mostra validação.
+2) Com workflow + base => chama API por WF na base correta e lista 0..N tickets.
+3) Se 0 tickets => mensagem “Nenhum ticket encontrado...”.
+4) Se N tickets => lista N linhas com APENAS os campos:
+   lastActionDate, serviceSecondLevel, serviceFirstLevel, status, subject, id.
+5) Clique numa linha => chama API por ID (base do ticket), busca actions, pega maior action.id e exibe action.description expandindo abaixo.
+
+Lote:
+1) Upload sem colunas workflow/Produto => erro de planilha.
+2) Linhas com workflow/Produto vazio ou Produto inválido => marcadas como inválidas (não consultadas).
+3) Linhas válidas => consultas são feitas na base correta conforme Produto.
+4) Se lote retorna 0 tickets no total => mensagem em tela informando isso.
+5) Se lote retorna tickets => listar todos (1:1). Sem mensagens por workflow sem retorno.
+
+Rate limit:
+- Em qualquer cenário, o sistema NÃO pode ultrapassar 10 chamadas/minuto.
+- Lote grande deve ser processado gradualmente (fila), sem crash.
+
+Faça testes manuais básicos e garanta que erros HTTP (4xx/5xx) sejam exibidos de forma amigável.

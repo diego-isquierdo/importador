@@ -1,0 +1,21 @@
+No modo Em Lote, implemente mapeamento robusto da coluna “Produto” para a base:
+
+Regras de normalização:
+- trim espaços no início/fim
+- transformar em lowercase
+- colapsar múltiplos espaços internos em 1 (ex.: "Projuris   Empresas" => "projuris empresas")
+- aceitar variações de caixa (maiúsculas/minúsculas)
+
+Mapeamento:
+- se normalizado contém exatamente “projuris empresas” => base EMPRESAS
+- se normalizado contém exatamente “projuris enterprise” => base ENTERPRISE
+Caso contrário => erro de validação na linha (Produto inválido)
+
+Validação por linha:
+- workflow vazio => erro (linha inválida)
+- Produto vazio => erro (linha inválida)
+- Produto inválido => erro (linha inválida)
+
+Comportamento de exibição:
+- Não exibir mensagens na tela para “workflow sem retorno” no lote.
+- Mas deve haver alguma forma de o usuário perceber linhas inválidas (ex.: listar erros de validação por linha, ou destacar antes de executar). Escolha uma solução de UX simples e consistente.
