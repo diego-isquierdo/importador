@@ -127,40 +127,57 @@ def build_ticket_payload(row: dict[str, Any], platform: str = "enterprise") -> d
     payload["createdDate"] = created_date
     subject = _norm(row.get("Título"))
     identificador = "" if row.get("identificador") is None else str(row.get("identificador")).strip()
+    if "STESTE" in identificador and not subject.startswith("STESTE"):
+        subject = "STESTE " + subject
     if "PCDE-" in identificador:
         subject = "[CANCELAMENTO] " + subject
     payload["subject"] = subject
 
-    servico_mensal = _norm(row.get("Servico_mensal")).replace("/", "<br />")
+    is_steste_model = ("Prazo_atv" in row) or ("Data_emissao" in row)
 
-    observacoes = row.get("Observacoes_gerais")
-    if observacoes is None:
-        observacoes = row.get("Descrição_motivo")
+    if is_steste_model:
+        servico_mensal = _norm(row.get("Servico_mensal")).replace("/", "<br />")
+        description = (
+            f"WorkFlow: {_norm(row.get('identificador'))}<br /><br />"
+            f"Prazo para Ativação: {_norm(row.get('Prazo_atv'))}<br />"
+            f"Razão Social: {_norm(row.get('Razão_social'))}<br />"
+            f"Contato no cliente: {_norm(row.get('Contato_cliente'))} - {_norm(row.get('Email_cliente'))}<br /><br />"
+            f"Módulos: {_norm(row.get('Modulos'))}<br /><br />"
+            f"Servicos: {servico_mensal}<br />"
+            f"Ativação de Hosting? {_norm(row.get('Ativação_hosting?'))}<br />"
+            f"Iniciador:<br />{_norm(row.get('Iniciador'))}"
+        )
+    else:
+        servico_mensal = _norm(row.get("Servico_mensal")).replace("/", "<br />")
 
-    prefix = ""
-    atividade = "" if row.get("Atividade") is None else str(row.get("Atividade")).strip()
-    if atividade:
-        prefix += f"Atividade: {_norm(atividade)}<br />"
+        observacoes = row.get("Observacoes_gerais")
+        if observacoes is None:
+            observacoes = row.get("Descrição_motivo")
 
-    tipo_cancelamento = "" if row.get("Tipo_cancelamento") is None else str(row.get("Tipo_cancelamento")).strip()
-    if tipo_cancelamento:
-        prefix += f"Tipo de Cancelamento: {_norm(tipo_cancelamento)}<br />"
+        prefix = ""
+        atividade = "" if row.get("Atividade") is None else str(row.get("Atividade")).strip()
+        if atividade:
+            prefix += f"Atividade: {_norm(atividade)}<br />"
 
-    description = (
-        prefix
-        + f"WorkFlow: {_norm(row.get('identificador'))}<br /><br />"
-        f"Liberado para Serviços Técnicos: {_norm(row.get('Habilitada_em'))}<br />"
-        f"Cliente novo? {_norm(row.get('Cliente_novo'))}<br />"
-        f"Razão Social: {_norm(row.get('Razão_social'))}<br />"
-        f"Nome Fantasia: {_norm(row.get('Nome_fantasia'))}<br />"
-        f"Contato no cliente: {_norm(row.get('Contato_cliente'))} - {_norm(row.get('Email_cliente'))}<br /><br />"
-        f"Módulos: {_norm(row.get('Modulos'))}<br /><br />"
-        f"Servicos: {servico_mensal}<br />"
-        f"Serviço Técnico: {_norm(row.get('Servico_tecnico'))}<br />"
-        f"Ativação de Hosting? {_norm(row.get('Ativação_hosting?'))}<br />"
-        f"Tem legal? {_norm(row.get('Tem_legal?'))}<br /><br />"
-        f"Observações:<br />{_norm(observacoes)}"
-    )
+        tipo_cancelamento = "" if row.get("Tipo_cancelamento") is None else str(row.get("Tipo_cancelamento")).strip()
+        if tipo_cancelamento:
+            prefix += f"Tipo de Cancelamento: {_norm(tipo_cancelamento)}<br />"
+
+        description = (
+            prefix
+            + f"WorkFlow: {_norm(row.get('identificador'))}<br /><br />"
+            f"Liberado para Serviços Técnicos: {_norm(row.get('Habilitada_em'))}<br />"
+            f"Cliente novo? {_norm(row.get('Cliente_novo'))}<br />"
+            f"Razão Social: {_norm(row.get('Razão_social'))}<br />"
+            f"Nome Fantasia: {_norm(row.get('Nome_fantasia'))}<br />"
+            f"Contato no cliente: {_norm(row.get('Contato_cliente'))} - {_norm(row.get('Email_cliente'))}<br /><br />"
+            f"Módulos: {_norm(row.get('Modulos'))}<br /><br />"
+            f"Servicos: {servico_mensal}<br />"
+            f"Serviço Técnico: {_norm(row.get('Servico_tecnico'))}<br />"
+            f"Ativação de Hosting? {_norm(row.get('Ativação_hosting?'))}<br />"
+            f"Tem legal? {_norm(row.get('Tem_legal?'))}<br /><br />"
+            f"Observações:<br />{_norm(observacoes)}"
+        )
 
     payload["actions"][0]["description"] = description
     payload["actions"][0]["createdDate"] = created_date

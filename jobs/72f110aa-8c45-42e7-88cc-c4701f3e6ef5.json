@@ -1,0 +1,19 @@
+{
+  "job_id": "72f110aa-8c45-42e7-88cc-c4701f3e6ef5",
+  "xlsx_path": "uploads\\72f110aa-8c45-42e7-88cc-c4701f3e6ef5.xlsx",
+  "created_at": "2026-01-12T11:49:59.606383",
+  "status": "completed",
+  "validated": true,
+  "validation_errors": [
+    {
+      "line": 2,
+      "column": "Time/Equipe",
+      "message": "Campo obrigatório vazio"
+    }
+  ],
+  "total": 1,
+  "success": 1,
+  "errors_count": 0,
+  "import_errors": [],
+  "log_path": "C:\\Users\\diego.isquierdo\\OneDrive - Softplan\\Projuris\\Diego\\Inovações\\Importação - Movidesk\\Importador de Tickets\\logs\\import_72f110aa-8c45-42e7-88cc-c4701f3e6ef5_20260112_115004.csv"
+}

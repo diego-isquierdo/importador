@@ -31,6 +31,12 @@ _HEADER_ALIASES: dict[str, str] = {
     "descri_o_motivo": "Descrição_motivo",
     "modulos": "Modulos",
 
+    # modelo STESTE
+    "data_emissao": "Data_emissao",
+    "prazo_atv": "Prazo_atv",
+    "contato": "Contato_cliente",
+    "email": "Email_cliente",
+
     # variações sem acento/regex para colunas do modelo antigo
     "time_equipe": "Time/Equipe",
     "razao_social": "Razão_social",

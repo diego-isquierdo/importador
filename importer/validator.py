@@ -80,9 +80,12 @@ def validate_headers(headers: list[str]) -> list[ValidationErrorItem]:
 
     headers_set = set(headers)
 
-    for col in REQUIRED_FIELDS:
-        if col not in headers_set:
-            errors.append(ValidationErrorItem(line=1, column=col, message="Coluna obrigatória ausente"))
+    is_steste_model = ("Prazo_atv" in headers_set) or ("Data_emissao" in headers_set)
+
+    if not is_steste_model:
+        for col in REQUIRED_FIELDS:
+            if col not in headers_set:
+                errors.append(ValidationErrorItem(line=1, column=col, message="Coluna obrigatória ausente"))
 
     produto_in = "Produto" in headers_set
     tipo_produto_in = "Tipo_produto" in headers_set
@@ -100,17 +103,18 @@ def validate_headers(headers: list[str]) -> list[ValidationErrorItem]:
 
     obs_in = "Observacoes_gerais" in headers_set
     motivo_in = "Descrição_motivo" in headers_set
-    if obs_in and motivo_in:
-        errors.append(
-            ValidationErrorItem(
-                line=1,
-                column="Descrição_motivo",
-                message='A planilha deve conter apenas "Observacoes_gerais" ou "Descrição_motivo" (nunca ambas)',
+    if not is_steste_model:
+        if obs_in and motivo_in:
+            errors.append(
+                ValidationErrorItem(
+                    line=1,
+                    column="Descrição_motivo",
+                    message='A planilha deve conter apenas "Observacoes_gerais" ou "Descrição_motivo" (nunca ambas)',
+                )
             )
-        )
-    if (not obs_in) and (not motivo_in):
-        errors.append(ValidationErrorItem(line=1, column="Observacoes_gerais", message="Coluna ausente"))
-        errors.append(ValidationErrorItem(line=1, column="Descrição_motivo", message="Coluna ausente"))
+        if (not obs_in) and (not motivo_in):
+            errors.append(ValidationErrorItem(line=1, column="Observacoes_gerais", message="Coluna ausente"))
+            errors.append(ValidationErrorItem(line=1, column="Descrição_motivo", message="Coluna ausente"))
 
     return errors
 
@@ -127,11 +131,18 @@ def validate_rows(headers: list[str], rows: list[dict[str, Any]]) -> list[Valida
     errors: list[ValidationErrorItem] = []
     headers_set = set(headers)
 
+    is_steste_model = ("Prazo_atv" in headers_set) or ("Data_emissao" in headers_set)
+
     for row in rows:
         line = int(row.get("__row_number__", 0) or 0)
-        for field in REQUIRED_FIELDS:
-            if field in headers_set and _is_empty(row.get(field)):
-                errors.append(ValidationErrorItem(line=line, column=field, message="Campo obrigatório vazio"))
+        if is_steste_model:
+            for field in ("Data_emissao", "Iniciador", "Prazo_atv", "Contato_cliente", "Email_cliente"):
+                if field in headers_set and _is_empty(row.get(field)):
+                    errors.append(ValidationErrorItem(line=line, column=field, message="Campo obrigatório vazio"))
+        else:
+            for field in REQUIRED_FIELDS:
+                if field in headers_set and _is_empty(row.get(field)):
+                    errors.append(ValidationErrorItem(line=line, column=field, message="Campo obrigatório vazio"))
 
         if "identificador" in headers_set and _is_empty(row.get("identificador")):
             errors.append(ValidationErrorItem(line=line, column="identificador", message="Campo obrigatório vazio"))
